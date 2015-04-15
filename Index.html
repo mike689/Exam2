@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2.css" />
+    <script src="js/Exam2.js"></script>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Exam 2 Problem</h1>
+        <br>
+        <div id="select">
+        <select id="menu" onchange="MenuSelection()">
+            <option>Select an option:</option>
+            <option>Category List</option>
+            <option>Add a Product Category</option>
+            <option>Change a Category Description</option>
+            <option>Delete a Category</option>
+            <option>About</option>
+        </select>
+        </div>
+        <hr>
+        <br>
+    </div>
+    <section id="catlist">
+        <br>
+        <br>  
+        <button onclick="GenCategories()" id="gencats">Generate Categories List</button>
+        <br>
+        <br>
+        <label id="catoutput"></label>
+    </section>
+    <section id="addcat">
+        <u>New Category</u>
+        <br>
+        <br>
+        <label>Category Name:</label>
+        <input type="text" id="catnewname">
+        <br>
+        <br>
+        <label>Category Description:</label>
+        <input type="text" id="catnewdesc">
+        <br>
+        <br>
+        <button onclick="AddCategory()" id="changedisc">Add New Category</button>
+        <br>
+        <br>
+        <label id="catnewoutput"></label>
+    </section>
+    <section id="changedesc">
+        <label>Enter an Customer ID:</label>
+        <input type="text" id="delid">
+        <br>
+        <br>
+        <button onclick="DeleteCustomer()" id="delbutton">Delete Customer</button>
+        <br>
+        <br>
+        <label id="deloutput"> </label>
+    </section>
+</body>
+</html>
