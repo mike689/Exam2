@@ -7,8 +7,6 @@
     <script src="js/Exam2.js"></script>
 </head>
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
 <body>
     <div id="top">
         <h1>Exam 2 Problem</h1>
@@ -19,12 +17,12 @@
             <option>Category List</option>
             <option>Add a Product Category</option>
             <option>Change a Category Description</option>
-            <option>Delete a Product Category</option>
+            <option>Delete a Category</option>
             <option>About</option>
         </select>
         </div>
         <hr>
-  
+        <br>
     </div>
     <section id="catlist">
         <br>
@@ -32,9 +30,7 @@
         <button onclick="GenCategories()" id="gencats">Generate Categories List</button>
         <br>
         <br>
-        <div id="cattable"></div>
-        <br>
-        <br>
+        <label id="catoutput"></label>
     </section>
     <section id="addcat">
         <u>New Category</u>
@@ -51,40 +47,17 @@
         <button onclick="AddCategory()" id="changedisc">Add New Category</button>
         <br>
         <br>
-        <label id="addcatoutput"></label>
+        <label id="catnewoutput"></label>
     </section>
     <section id="changedesc">
-        <u>Change Category Description</u>
+        <label>Enter an Customer ID:</label>
+        <input type="text" id="delid">
         <br>
         <br>
-        <label>Existing Category ID:</label>
-        <input type="number" id="catid">
+        <button onclick="DeleteCustomer()" id="delbutton">Delete Customer</button>
         <br>
         <br>
-        <label>New Category Description:</label>
-        <input type="text" id="catchangedesc">
-        <br>
-        <br>
-        <button onclick="ChangeDescription()" id="moddesc">Change Category  Description</button>
-        <br>
-        <br>
-        <label id="changedescoutput"></label>
-    </section>
-    <section id="deletecat">
-        <u>Delete a Category</u>
-        <br>
-        <br>
-        <label>Existing Category ID:</label>
-        <input type="text" id="catdelid">
-        <br>
-        <br>
-        <button onclick="DeleteCategory()" id="delcat">Delete Category</button>
-        <br>
-        <br>
-        <label id="deletecatoutput"></label>
-    </section>
-    <section id="about">
-        
+        <label id="deloutput"> </label>
     </section>
 </body>
 </html>
